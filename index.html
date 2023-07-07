@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Library page</title>
+  <!---custom css link---->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+   <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+  <!----header design--->
+  <header>
+    <a href="#" class="logo"style="text-decoration: none;"><i>AR RENTALS</i></a>
+
+    <ul class="navlist">
+      <li><a href="#home" style="text-decoration: none;">Home</a></li>
+      <li><a href="#books"style="text-decoration: none;">Books</a></li>
+      <li><a href="cart.html"style="text-decoration: none;">Cart</a></li>
+      <li><a href="#contact"style="text-decoration: none;">Contact us</a></li>
+      <li><a href="signup.html"style="text-decoration: none;" id="signup-login-link">Signup/Login</a></li>
+    </ul>
+
+    <div class="bx bx-menu" id="menu-icon">
+      
+    </div>
+
+  </header>
+
+  <div id="signup-login-content" style="display: none;">
+    <h2>New user signup and login</h2>
+    <form>
+      <!-- Add your form fields and validation here -->
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Using proper authentication and sessions</p>
+    <p>Sign in with social media</p>
+    <p>Email and mobile number verification</p>
+  </div>
+
+  <!----home section design--->
+  <section class="home">
+    <div class="hero">
+      <h1>Welcome to the Library Management System</h1>
+      <a href="#books" class="btn">Browse Books</a>
+    </div>
+  </section>
+  
+
+  <div id="search-section">
+    <div class="knowledge-quest">
+      <p><h1>Embark on a Knowledge Quest - Take <br> the Next Step in Your Learning Journey!</h1></p>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Search for books">
+      <ul id="search-suggestions"></ul>
+      <button id="search-button">Search</button>
+    </div>
+  </div>
+  
+  <div id="books-count">
+    <!-- The count of books will be dynamically updated here -->
+  </div>
+  
+
+  <!----books section design--->
+  <section id="books" class="books">
+    <h2>Discover a Wide Variety of Books</h2>
+  
+    <div class="book-category">
+      <h3>Fiction</h3>
+      <div class="book-list">
+        <div class="book">
+          <img src="fic1.jpeg" alt="Fiction Book 1">
+          <h4>To Kill a Mockingbird</h4>
+          <p>Author: Harper Lee</p>
+          <p class="plot"> It is narrated by Scout Finch, a six-year-old tomboy who lives with her lawyer father Atticus and her ten-year-old brother Jem. During the novel Scout, Jem and their friend Dill try to make their reclusive neighbour Boo Radley leave his house.</p>
+        </div>
+        <div class="book">
+          <img src="fic2.jpg" alt="Fiction Book 2">
+          <h4>1984</h4>
+          <p>Author: George Orwell</p>
+          <p class="plot">the novel tells the tragic story of Jay Gatsby, a self-made millionaire, and his pursuit of Daisy Buchanan, a wealthy young woman whom he loved in his youth.</p>
+        </div>
+        <div class="book">
+          <img src="fic3.jpg" alt="Fiction Book 3">
+          <h4>The Great Gatsby</h4>
+          <p>Author: F. Scott Fitzgerald</p>
+          <p class="plot">the novel tells the tragic story of Jay Gatsby, a self-made millionaire, and his pursuit of Daisy Buchanan, a wealthy young woman whom he loved in his youth.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="book-category">
+      <h3>Non-Fiction</h3>
+      <div class="book-list">
+        <div class="book">
+          <img src="nfic1.jpeg" alt="Non-Fiction Book 1">
+          <h4>Sapiens: A Brief History of Humankind</h4>
+          <p>Author: Yuval Noah Harari</p>
+          <p class="plot">Our species, Homo sapiens, started out as just another, biologically insignificant, animal among countless others, but at some point made a very quick “jump” to domination over other species that has left man anxious, destructive, and often miserable despite all our efforts to be happy.</p>
+        </div>
+        <div class="book">
+          <img src="nfic2.jpeg" alt="Non-Fiction Book 2">
+          <h4>Becoming</h4>
+          <p>Author: Michelle Obama</p>
+          <p class="plot">Becoming Me traces Obama's early life growing up on the South Side of Chicago with her parents - Fraser and Marian Robinson - in an upstairs apartment where she got her first piano lessons and learnt to be an independent girl under the nurturing care of her parents.</p>
+        </div>
+        <div class="book">
+          <img src="nfic3.jpeg" alt="Non-Fiction Book 3">
+          <h4>The Power of Now</h4>
+          <p>Author: Eckhart Tolle</p>
+          <p class="plot">offers a specific method for putting an end to suffering and achieving inner peace, living fully in the present and separating yourself from your mind. The book also teaches you to detach yourself from your “ego” – a part of the mind that seeks control over your thinking and behavior.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!----bestsellers section design--->
+  <section id="books" class="books">
+    <h2>Few Fast Moving Copies</h2>
+  
+    <div class="book-category">
+      <h3>Fiction</h3>
+      <div class="book-list">
+        <div class="book">
+          <img src="fi1.jpeg" alt="Fiction Book 1">
+          <h4>The Catcher in the Rye</h4>
+          <p>Author: J.D. Salinger</p>
+          <p class="price">Rent for: ₹35/day</p>
+          <p class="caption">Immerse yourself in the rebellious journey of a disillusioned teenager.</p>
+          <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="book">
+          <img src="fi2.jpg" alt="Fiction Book 2">
+          <h4>Pride and Prejudice</h4>
+          <p>Author: Jane Austen</p>
+          <p class="price">Rent for: ₹44/day</p>
+          <p class="caption">Indulge in the timeless love story set in the world of 19th-century British society.</p>
+          <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="book">
+          <img src="fi3.jpg" alt="Fiction Book 3">
+          <h4>One Hundred Years of Solitude</h4>
+          <p>Author: Gabriel Garcia Marquez</p>
+          <p class="price">Rent for: ₹66/day</p>
+          <p class="caption">Enter a magical realm filled with captivating tales of the Buendía family.</p>
+          <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="book-category">
+      <h3>Non-Fiction</h3>
+      <div class="book-list">
+        <div class="book">
+          <img src="nfi.jpg" alt="Non-Fiction Book 1">
+          <h4>The Subtle Art of Not Giving a F*ck</h4>
+          <p>Author: Mark Manson</p>
+          <p class="price">Rent for: ₹37/day</p>
+          <p class="caption">Discover a refreshing approach to living a more authentic and fulfilling life.</p>
+          <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="book">
+          <img src="nfi2.jpg" alt="Non-Fiction Book 2">
+          <h4>Educated</h4>
+          <p>Author: Tara Westover</p>
+          <p class="price">Rent for: ₹45/day</p>
+          <p class="caption">Experience a remarkable memoir of a woman's journey from self-education to empowerment.</p>
+          <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+        <div class="book">
+          <img src="nfi3.jpg" alt="Non-Fiction Book 3">
+          <h4>Thinking, Fast and Slow</h4>
+          <p>Author: Daniel Kahneman</p>
+          <p class="price">Rent for: ₹40/day</p>
+          <p class="caption">Explore the fascinating workings of the human mind and the biases that shape our decisions.</p>
+          <button class="add-to-cart-button">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!----rules section design--->
+  <section id="rules" class="rules">
+    <h1>Rental Rules</h1><br>
+    <ul class="rule-list">
+      <li>Books can be rented for a maximum period of 30 days.</li>
+      <li>Late returns will incur a fine of ₹1 per day.</li>
+      <li>Books should be handled with care to avoid damage or loss.</li>
+      <li>Any damage to a rented book must be reported immediately.</li>
+      <li>Highlighting, underlining, or writing in the books is strictly prohibited.</li>
+      <li>Books should be returned in the same condition as they were rented.</li>
+      <li>Lost or damaged books will result in a replacement fee equal to the book's value.</li>
+      <li>Books can be renewed for an additional rental period if no other users have requested them.</li>
+      <li>Returning books beyond the rental period without prior notice may affect future borrowing privileges.</li>
+    </ul>
+    <br>
+    <h1>Returning Books</h1>
+    <p>When returning a book, please follow these steps:</p>
+    <ul class="return-steps">
+      <li>Ensure the book is in good condition with no damages or markings.</li>
+      <li>Place the book in a protective cover or bag to prevent any further damage.</li>
+      <li>Return the book to the library's designated return area or desk.</li>
+      <li>Check with library staff to ensure the return is recorded and any fines are cleared.</li>
+    </ul>
+  </section>
+  
+  
+  <!----contact section design--->
+  <section class="contact" id="contact">
+    <div class="contact-text">
+      <h2>Contact <span>us</span></h2>
+      <br>
+      <div class="list">
+        <ul><a href="#" style="color:black">9345763141</a></ul>
+        <ul><a href="#" style="color:black">rehanamdariff1702@gmail.com</a></ul>
+      </div>
+
+      <div class="contact-icons">
+        <a href="#"><i class='bx bxl-facebook' ></i></a>
+        <a href="#"><i class='bx bxl-twitter' ></i></a>
+        <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+        <a href="#"><i class='bx bxl-youtube' ></i></a>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <form action="">
+        <input type="name" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email Address" required>
+        <input type="" placeholder="Your Mobile Number" required>
+        <textarea name="" id="" cols="35" rows="10" placeholder="How Can I Help You" required></textarea>
+        <input type="submit" value="Send Message" class="submit" required>
+      </form>
+    </div>
+  </section>
+
+  <!----end section design--->
+  <section class="end">
+    <div class="last-text">
+      <p>Copyright © 2022 by Rehana All Rights Reserved.</p>
+    </div>
+
+    <div class="top">
+      <a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+    </div>
+  </section>
+
+  <!---custom js link--->
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

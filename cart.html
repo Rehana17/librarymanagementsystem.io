@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Cart</title>
+  <style>
+  .cart {
+  background-color: #be6268;
+  padding: 20px;
+  margin: 20px auto; /* Added 'auto' for horizontal center alignment */
+  width: 80%; /* Adjust the width as needed */
+}
+
+/* Rest of the CSS remains the same */
+#cart-items {
+  margin-bottom: 20px;
+}
+
+#cart-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cart-summary p {
+  margin: 0;
+}
+
+#cart-summary button {
+  padding: 10px 20px;
+  background-color: #4285F4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <section id="cart" class="cart">
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Your Cart</title>
+  <style>
+    body {
+  background-color:#be6268;
+}
+
+.cart-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-heading {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#cart-form {
+  margin-top: 20px;
+}
+
+#cart-items {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#cart-summary {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+#cart-summary p {
+  margin: 10px 0;
+}
+
+#cart-total-billing {
+  font-weight: bold;
+}
+
+#checkout-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4285F4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <div class="cart-container">
+    <h2 class="cart-heading">Your Cart</h2>
+    
+    <form id="cart-form">
+      <div id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+      
+      <div id="cart-summary">
+        <p>Total Books: <span id="cart-book-count">0</span></p>
+        <p>Total Billing: $<span id="cart-total-billing">0</span></p>
+        <button id="checkout-button">Checkout</button>
+      </div>
+    </form>
+  </div>
+  
+  <script src="cart.js"></script>
+</body>
+</html>
+
+  
